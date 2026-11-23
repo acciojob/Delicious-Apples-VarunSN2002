@@ -1,1 +1,150 @@
 /* your code here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #00E384;
+}
+
+.product {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 65vw;
+	height: 70vh;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.product__photo {
+	margin-left: -40px;
+	margin-top: 40px;
+	width: 55%;
+}
+
+.photo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	border: 1px solid white;
+	margin: 0;
+	padding: 0;
+	border-radius: 10px;
+	overflow: visible;
+}
+
+.photo-main {
+	background-color: #AFE846;
+	padding: 0;
+	margin: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.photo-main > img {
+	margin-left: -60px;
+}
+
+.photo-main .controls {
+	color: white;
+}
+
+.photo-main .controls #share {
+	margin: 5px;
+}
+
+.photo-main .controls #heart {
+	position: relative;
+	left: 80%;
+}
+
+.photo-album {
+	background-color: white;
+	border-bottom-left-radius: 10px;
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+}
+
+.photo-album ul {
+	list-style: none;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	margin: 20px 30px;
+}
+
+.photo-album > ul > li > img {
+	border: 1px solid #D1D1D1;
+	border-radius: 3px;
+}
+
+.product__info {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 10%;
+}
+
+.title {
+	font-size: 12px;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.price {
+	color: red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.price span {
+	font-size: 40px;
+}
+
+.variant ul {
+	list-style: none;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+}
+
+.variant ul > li > img {
+	width: 40px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.product__info .description {
+	font-size: 13px;
+	margin-top: 30px;
+}
+
+.product__info .description ul {
+	margin-left: 20px;
+}
+
+.product__info .btn {
+	background-color: #FF3F40;
+	color: white;
+	margin: 50px 0px;
+	width: 180px;
+	height: 60px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.product__info .btn p {
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
